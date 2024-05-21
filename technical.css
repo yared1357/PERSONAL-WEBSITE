@@ -1,0 +1,85 @@
+
+    /* Add your custom styles here */
+    .progress-line {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      height: 10px;
+      margin-top: 5px;
+      position: relative;
+    }
+
+    .progress-line span {
+      border-radius: 10px;
+      display: block;
+      height: 100%;
+    }
+
+    .progress-line.html span {
+      background-color: #E34C26; /* HTML color */
+      width: 95%;
+      font-weight: bold;
+    }
+
+    .progress-line.css span {
+      background-color: #2965F1; /* CSS color */
+      width: 87%;
+    }
+
+    .progress-line.js span {
+      background-color: #F7DF1E; /* JavaScript color */
+      width: 88%;
+    }
+
+    .progress-line.python span {
+      background-color: #4B8BBE; /* SQL color */
+      width: 91%;
+    }
+
+    .progress-line.react span {
+      background-color: #61DAFB; /* Bootstrap color */
+      width: 50%;
+    }
+
+    .progress-line.sql span {
+      background-color: #00758F; /* SQL color */
+      width: 91%;
+    }
+
+    .progress-line.bootstrap5 span {
+      background-color: #7952B3; /* Bootstrap5 color */
+      width: 90%;
+    }
+
+    .progress-line.php span {
+      background-color: #8892BF; /* PHP color */
+      width: 87%;
+    }
+
+    .percentage {
+      margin-top: 5px;
+      font-size: 20px;
+      text-align: right;
+      color: #800000;
+      font-weight: bold;
+    }
+
+    .percentage::after {
+      content: '%';
+    }
+
+    .bar i {
+      color: #800000;
+      font-size: 30px;
+    }
+
+    /* Animation effect */
+    .progress-line span {
+      animation: progress 2s ease-in-out;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+    }
+  

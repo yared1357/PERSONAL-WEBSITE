@@ -1,0 +1,332 @@
+/* Set the container to hold the marquee text */
+  #home {
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+#about {
+padding-top: 70px;
+}
+
+#skills {
+padding-top: 70px;
+
+}
+
+#contact {
+ padding-top: 70px;
+}
+
+#services {
+ padding-top: 70px;
+}
+
+/* Styling for the about section */
+#about {
+  background-color: #fff;
+  padding: 70px;
+  border-radius: none;
+}
+
+/* Styling for the heading */
+#about h2 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Styling for the paragraph */
+#about .p3 {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Styling for the image */
+#about img {
+  float: left;
+  margin-right: 15px;
+  width: 270px;
+  height: 270px;
+  border-radius: 30%;
+}
+
+/* Styling for the links */
+#about a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Styling for the line breaks */
+#about br {
+  line-height: 1;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Css for the Services */
+
+body {
+      background-color: #f2f2f2;
+    }
+
+    h3 {
+      color: black;
+    }
+    
+    .service-description {
+     font-size: 20px;
+     word-spacing: -0.3em; /* Adjust the value as needed */ 
+     }
+
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-item {
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      background-color: #ffffff;
+      margin: 10px;
+    }
+
+    .service-item:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container {
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      text-align: justify;
+    }
+
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+      height: 250px;
+    }
+
+    .rounded-image {
+      border-radius: 50%;
+    }
+	
+	
+	/* Skill container */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+
+ 
+}
+
+.skills-column {
+  flex-basis: 50%;
+}
+
+
+
+
+.hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  padding: 20px;
+  z-index: 9999;
+  box-sizing: border-box; /* Add this line to include padding in the 100% width */
+}
+
+.hero h2 {
+  color: #000;
+}
+
+#icon {
+  width: 40px;
+  cursor: pointer;
+  font-size: 30px;
+  display: none; /* Hide the toggleNav icon by default */
+}
+
+nav {
+  width: 100%; /* Change this to 100% */
+  margin: auto;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 9999;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#fff;
+  font-size:20px;
+  padding-right: 50px;
+}
+
+nav ul li a:hover {
+  color: #800000;
+}
+
+body {
+  margin: 0;
+  padding-top: 15px;/* Adjust the padding-top value based on the height of your navigation bar */
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #009999;
+  z-index: 9999;
+}
+
+section {
+  padding-top: inherit;
+}
+
+/* Add your existing CSS styles here */
+
+/* Hide the navigation menu by default */
+nav ul {
+  display: none;
+}
+
+/* Show the navigation menu when the window size is larger */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+}
+
+/* Show the icon and make the nav vertical when the window size is smaller or on touch devices */
+@media (max-width: 767px) {
+  #icon {
+    display: inline-block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}
+
+
+/* CSS styles for the footer */
+    .footer {
+      background-color: #009999;
+      padding: 10px 0;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .footer p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    
+    .footer-nav a {
+      margin: 0 10px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-nav a:hover {
+      color: #800000;
+    }
+    
+    .footer-social-icons {
+      margin-top: 30px;
+    }
+    
+    .footer-social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ggg;
+      line-height: 40px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .footer-social-icons a:hover {
+      background-color: #fff;
+      color: #009999;
+    }
+    
+    .footer-social-icons i {
+      font-size: 18px;
+    }
+    
+    .footer-social-icons .fab.fa-facebook-f:hover {
+      color: #3b5998;
+    }
+    
+    .footer-social-icons .fab.fa-twitter:hover {
+      color: #1da1f2;
+    }
+    
+    .footer-social-icons .fab.fa-instagram:hover {
+      color: #c13584;
+    }
+    
+    .footer-social-icons .fab.fa-linkedin-in:hover {
+      color: #0077b5;
+    }

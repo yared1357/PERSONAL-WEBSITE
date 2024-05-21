@@ -1,0 +1,170 @@
+/* CSS Code for contact us */
+body {
+  font-family: serif, times new roman;
+  background-color: #fff;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+}
+
+.additional-sections {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 0px;
+  padding: 90px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Add overflow property to hide horizontal scroll */
+}
+
+.additional-sections h1{
+   font-size: 25px;
+}
+
+
+
+
+.contact-sections {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 39px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Add overflow property to hide horizontal scroll */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 29px;
+  color: black;
+}
+
+.content {
+  margin-bottom: 18px;
+}
+
+p {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+.fields {
+  display: grid;
+  gap: 20px;
+}
+
+.field {
+  display: grid;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.actionss {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.primary {
+  background-color: #00b3b3;
+}
+
+.primary:hover {
+  background-color: #009999;
+}
+
+.top-up-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: none;
+}
+
+.top-up-message p {
+  margin: 0;
+}
+
+.top-up-message button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .containers {
+    flex-direction: column;
+  }
+  
+  .additional-sections {
+    margin-right: 0;
+    margin-bottom: 20px;
+    overflow: auto; /* Change overflow property to scroll instead of hidden to enable vertical scrolling on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-sections,
+  .additional-sections {
+    padding: 20px;
+    overflow: auto; /* Change overflow property to scroll instead of hidden to enable vertical scrolling on small screens */
+  }
+}
